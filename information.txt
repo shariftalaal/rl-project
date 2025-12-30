@@ -1,0 +1,6 @@
+If you make any progress, please write it down here:
+
+22/12
+The DQN Algorithm uses a neural network to approximate the state space (since it is so large in mario bros). You can see this in the code under the class "DQN(nn.Module)". The "ReplayMemory" class is a buffer of fixed size that stores the recent observed transitions. For training, we use a random sample of this buffer for generalisation. The "Transition" variable is a tuple, mapping a (state, action) to the (next_state, reward). 
+
+There are various loss functions e.g. MSE, MAE. Huber loss is a combination of both depending on the size of the error, built to be robust against outliers.   
